@@ -16,3 +16,10 @@ if ($start < $end) {
   echo "Start is before the end!\n"; 
 }
 
+// output all thursdays between $start and $end 
+$periodInterval = DateInterval::createFromDateString('first thursday'); 
+$periodIterator = new DatePeriod($start, $periodInterval, $end, DatePeriod::EXCLUDE_START_DATE); 
+
+foreach ($periodInterval as $date) {
+  echo $date->format('Y-m-d') . ' '; 
+}
