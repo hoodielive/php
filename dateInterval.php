@@ -12,3 +12,7 @@ $end->add(new DateInterval('P1M6D'));
 $diff = $end->diff($start); 
 echo 'Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n"; 
 
+if ($start < $end) {
+  echo "Start is before the end!\n"; 
+}
+
