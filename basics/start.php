@@ -9,8 +9,8 @@ echo gettype($name);
 $fileIsUploaded = true;
 
 if ($fileIsUploaded) {
-    echo '<br>';
     echo "Your file has uploaded.";
+    echo '<br>';
 }
 else {
     echo "Your file could not be uploaded. ";
@@ -40,5 +40,5 @@ $users = [
 echo '<pre>' . $users[2]['likes'][0] . '</pre>';
 
 foreach ($users as $user) {
-    var_dump($user);
+    echo $user['likes'][0] . '<br>';
 }
