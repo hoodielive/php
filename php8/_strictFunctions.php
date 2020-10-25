@@ -6,5 +6,12 @@ function addTwo(int $first_value, int $second_value) : int
 	return $result;
 }
 
+function addTwoFloats(float $first, float $second) : int
+{
+	$result = $first + $second;
+	return $result;
+}
+
 print addTwo(12, 14);
+print addTwoFloats(32.1, 14);
 
