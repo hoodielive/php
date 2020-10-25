@@ -48,5 +48,5 @@ $new_dog_pack = array(
 
 var_dump($new_dog_pack);
 
-echo $new_dog_pack->returnDogColor("Oje");
+echo $new_dog_pack[0]->returnDogColor([3]);
 
