@@ -2,8 +2,8 @@
 
 class Movie
 {
-	private $id;
-	private $title;
+	public $id;
+	public $title;
 	public $rentalPrice;
 	const DISCOUNT = 10;
 
