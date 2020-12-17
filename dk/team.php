@@ -64,5 +64,5 @@ $osa = Team::start('Osa Team', [
 
 $oje = Team('Oje Messengers');
 
-$osa->add('Frank Doe');
+$osa->add('Nick Wise');
 var_dump($osa->members());
